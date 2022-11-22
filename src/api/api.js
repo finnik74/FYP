@@ -7,3 +7,4 @@ export const getUserInfo = () => {return axios.get(`http://localhost:8000/api/us
 export const postUserInfo = (Username, Password,Birthday) => {return axios.post(`http://localhost:8000/api/user/`, {'name': Username, 'password': Password,'birth':Birthday})}
 
 
+export const no_bay = () => {return axios.post(`http://localhost:8000/api/no_bay/`, )}

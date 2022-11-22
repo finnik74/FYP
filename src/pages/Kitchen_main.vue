@@ -1,17 +1,6 @@
 <template>
   <div>
-    <div class="colcentre bar" style=" font-size: 1.4rem; line-height: 60px; position: absolute;">
-      <span>&nbsp;</span>
-      <span style=""><el-button plain size="mini" @click="showbar =! showbar"><span  class="glyphicon glyphicon-align-justify"></span></el-button></span>
-      <span @click="go_home" class="h">&nbsp;&nbsp;&nbsp;HomePage</span>
-      <span @click="go_login" class="h" style="position: absolute; right: 1%">&nbsp;Login</span>
-      <transition name="el-zoom-in-top">
-        <navigation  v-show="showbar" style="top: 60px;position: absolute;z-index:999"></navigation>
-      </transition>
-    </div>
-
-
-
+   <TopBar> </TopBar>
     <div class="container">
       <div id="app_main" class="wid">
        <h1 class="title" style="margin-top: 100px">Finnik's Kitchen</h1>
@@ -175,16 +164,7 @@
 body{
   margin: 0px;
 }
-.el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 200px;
-  min-height: 400px;
-}
 
-.flex {
-  display: flex;
-  flex-flow: row wrap;
-  margin-top: 10px;
-}
 .flex div {
   width: 60px;
   height: 60px;
@@ -192,27 +172,20 @@ body{
   border: 1px solid black;
 }
 
-.templateItem {
-  display: flex;
-  flex-flow: row wrap;
-}
 
 
-.template {
-    flex: 2 0 21%;
-    margin-right: 2.2%;
 
-  }
+
 </style>
 
 <script>
 import navigation from "@/components/navigation";
 import rolling_picture from "@/components/rolling_picture";
+import TopBar from "@/components/TopBar";
 export default {
 
   data() {
     return{
-      showbar:false,
       show1:true,
       show2:false,
       wid: document.body.clientWidth,
@@ -223,12 +196,6 @@ export default {
     }
   },
   methods: {
-    go_login() {
-      window.location.href='login'
-    },
-    go_home() {
-      window.location.href='/'
-    },
     resize_c(){
       this.wid = document.body.clientWidth
       console.log(this.wid)
@@ -241,6 +208,7 @@ export default {
 
   },
   components:{
+    TopBar,
     navigation,
     rolling_picture
   },

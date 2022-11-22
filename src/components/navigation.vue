@@ -19,9 +19,9 @@
           <el-menu-item index="1-4-1">选项1</el-menu-item>
         </el-submenu>
       </el-submenu>
-      <el-menu-item index="2">
+      <el-menu-item index="2" @click="goKitchen">
         <i class="el-icon-menu"></i>
-        <span slot="title">导航二</span>
+        <span slot="title">FINNIK'S KITCHEN</span>
       </el-menu-item>
       <el-menu-item index="3" disabled>
         <i class="el-icon-document"></i>
@@ -46,6 +46,9 @@ export default {
     };
   },
   methods: {
+    goKitchen() {
+      window.location.href='kitchen'
+    },
     handleOpen(key, keyPath) {
       console.log(key, keyPath);
     },

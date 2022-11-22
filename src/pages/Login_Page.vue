@@ -68,7 +68,6 @@ export default {
   methods: {
 
     LoginCheckRemote() {
-      let data = {'user': this.form.LoginUserName, 'password': this.form.password};
       this.axios({
         url: 'http://localhost:8000/auth/',
         method:'post',

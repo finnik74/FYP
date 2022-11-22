@@ -40,9 +40,39 @@
 }
 .bar{
     height: 60px; background-color: black; width: 100%;color: white; font-weight: bolder;
-
 }
-.h:hover{
-    cursor: pointer;
-    color: #87898e;
+
+.bay_bar{
+    height: 50px; background-color: cornflowerblue; width: 100%;color: white; font-weight: bolder;
+}
+/*title*/
+.el-tabs__item.is-active{
+    color: #3B76EF  !important;
+    font-size: 25px;
+}
+.el-tabs__item.is-status{
+    color: blue;
+}
+.el-tabs__active-bar{
+    background-color: #3B76EF;
+    z-index: 100;
+}
+.template {
+    flex: 1 0 21%;
+    margin-right: 2.2%;
+}
+.templateItem {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+}
+.box{
+    padding:25px;
+    border-radius: 8px;
+    color:snow;
+    text-align: left;
+    background-color: #63C7FF;
+    font: italic 1.3em Georgia, serif;
+    line-height: 26px;
+    font-weight: 400
 }

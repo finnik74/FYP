@@ -2,9 +2,10 @@
 
 <template>
  <div>
-   <div class="jumbotron" style="height: 100vh">
-     <div class="container" style="text-align: center;">
-       <div style="margin-top: 35vh">
+   <div class="jumbotron" style="height: 100vh; padding:0px">
+     <TopBar></TopBar>
+     <div class="container animate__animated animate__fadeInDown" style="text-align: center;">
+       <div style="margin-top: 40vh">
        <h1>欢迎来到Hao的主页</h1>
        <p>Keep calm and carry on.</p>
        <p @click="gomain"><a class="btn btn-primary btn-lg" role="button">关于我，了解更多</a></p>
@@ -26,13 +27,12 @@
       <p><i class="el-icon-s-home"></i> Address: Liverpool</p>
      </div>
     </div>
-    <div style="display: flex; justify-content: center" class="animate__animated animate__backInRight wow">
+    <div style="display: flex; justify-content: center" class="animate__animated animate__fadeInRight wow">
      <div class="wid" style="white-space: pre-wrap;font-family: 'BM Yeonsung';text-align: left" >
      <p style="font-size: 40px; text-align: center">About me</p>
      <p style="font-size: 20px; line-height: 20px;"  >{{content}}</p>
      </div>
     </div>
-    <el-button type="info" plain @click="goKitchen">Finnik's kitchen</el-button>
   </div>
 
   <div style="height: 30px; display: flex; background-color: #475669; margin-top: 400px;width: 100%"> <div style="color: aliceblue; align-self: center;">&nbsp&nbsp&nbsp@ Developed by Hao Chu </div></div>
@@ -62,13 +62,16 @@
 
 <script>
 import { WOW } from 'wowjs'
+import TopBar from "@/components/TopBar";
 export default {
   name: 'HomePage',
+  components: {TopBar},
   props: {
     msg: String
   },
   data(){
     return{
+      showbar:false,
       showmain:true,
       content:'I was born in Yixing, Jiangsu, the hometown of teapot. I finished 12 years of school life there.To be honest, my grades in primary and middle school were barely satisfactory, but in high school was terrible. It was the worst time of my life in some ways. Fortunately, it finally passed and I went to university.\n\n' +
           'I graduated from XJTLU in Suzhou,and my major was computer science, it was a 2+2 programme, which means I studied two years in Suzhou and two years in Liverpool. During my days in Liverpool, life became boring, but it also allowed me to have some free time to do things that I liked, such as software development and cooking, which is why I set up this website in the first place. ' +
