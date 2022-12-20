@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import './plugins/element.js'
+// import locale from "element-ui/lib/locale/lang/en";
 import './finnik.css'
 Vue.config.productionTip = false
 import VueRouter from "vue-router";

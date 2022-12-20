@@ -85,10 +85,21 @@
           <el-tabs v-model="activeName2"   @tab-click="handleClick">
            <el-tab-pane label="BayLIME" name="first">
              <div class="templateItem">
-               <div class="thumbnail template" style="text-align: center">
+               <div class="thumbnail template" style="text-align: center;background-color: #4b93f5">
                  <img src="../../../../../demoproject/BayLime/data/5.jpg">
-                 <h2 style="color: black">Original</h2>
+                 <h2 style="color: #003bbb;font-weight: 500">Original</h2>
+                 <el-tooltip class="item" effect="dark" content="Choose pattern" placement="right-start">
+                   <el-select v-model="value5" placeholder="Choose pattern.">
+                     <el-option
+                         v-for="item in options5"
+                         :key="item.value5"
+                         :label="item.label5"
+                         :value="item.value5">
+                     </el-option>
+                   </el-select>
+                 </el-tooltip>
                  <p></p>
+                 <el-tooltip class="item" effect="dark" content="Choose picture" placement="right-start">
                  <el-select v-model="value" placeholder="Please choose picture.">
                    <el-option
                        v-for="item in options1"
@@ -97,8 +108,11 @@
                        :value="item.value">
                    </el-option>
                  </el-select>
+                 </el-tooltip>
                  <p></p>
-                 <el-select v-model="value2" placeholder="Hidden color.">
+                 <el-tooltip class="item" effect="dark" content="if True, only take superpixels that positively contribute to
+                the prediction of the label." placement="right-start">
+                 <el-select v-model="value2" placeholder="Positive only">
                    <el-option
                        v-for="item in options2"
                        :key="item.value2"
@@ -106,8 +120,22 @@
                        :value="item.value2">
                    </el-option>
                  </el-select>
+                 </el-tooltip>
                  <p></p>
-                 <el-select v-model="value3" placeholder="Batch size.">
+                 <el-tooltip class="item" effect="dark" content="if True, make the non-explanation part of the return
+                image gray" placement="right-start">
+                 <el-select v-model="value4" placeholder="Hidden rest">
+                   <el-option
+                       v-for="item in options4"
+                       :key="item.value4"
+                       :label="item.label4"
+                       :value="item.value4">
+                   </el-option>
+                 </el-select>
+                 </el-tooltip>
+                 <p></p>
+                 <el-tooltip class="item" effect="dark" content="number of superpixels to include in explanation" placement="right-start">
+                 <el-select v-model="value3" placeholder="Number of features">
                    <el-option
                        v-for="item in options3"
                        :key="item.value3"
@@ -115,26 +143,75 @@
                        :value="item.value3">
                    </el-option>
                  </el-select>
+                 </el-tooltip>
                  <p></p>
                  <el-button @click="get_no_bay">Start</el-button>
+
+                 <p></p>
                </div>
 
                <div class="thumbnail template" style="margin-right: 0px">
                  <div class="temp">
-                   <div class="box2">
-                     <img :src="'data:image/png;base64,' + no_bay" style="width: 100%;object-fit: cover"/>
-                     <h3>No Bay</h3>
+                  <div class="box2" v-loading="load_nobay">
+                    <img :src="'data:image/png;base64,' + no_bay" style="width: 100%;object-fit: cover" v-show="no_bay!=''"/>
+                     <p style="font-size: 1em;color: black">No Bay</p>
                    </div>
-                   <div class="box2"><img :src="'data:image/png;base64,' + no_bay" style="width: 100%;object-fit: cover"/></div>
-                   <div class="box2"><img :src="'data:image/png;base64,' + no_bay" style="width: 100%;object-fit: cover"/></div>
-                   <div class="box2"><img :src="'data:image/png;base64,' + no_bay" style="width: 100%;object-fit: cover"/></div>
+
+                   <div class="box2" v-loading="load_bnip">
+                     <img :src="'data:image/png;base64,' + bnip" style="width: 100%;object-fit: cover" v-show="bnip!=''"/>
+                     <p style="font-size: 1em;color: black">Bay non info prior</p>
+                   </div>
+                   <div class="box2" v-loading="load_bip">
+                     <img :src="'data:image/png;base64,' + bip" style="width: 100%;object-fit: cover" v-show="bip!=''"/>
+                     <p style="font-size: 1em;color: black">Bay info prior</p>
+                   </div>
+                   <div class="box2" v-loading="load_bipfa">
+                     <img :src="'data:image/png;base64,' + bipfa" style="width: 100%;object-fit: cover" v-show="bipfa!=''"/>
+                     <p style="font-size: 1em;color: black;">BayesianRidge inf prior fit alpha</p>
+                   </div>
                  </div>
                </div>
 
              </div>
            </el-tab-pane>
             <el-tab-pane label="BayLIME-Profession" name="second">
-             Coming soon.
+<!--&lt;!&ndash;             Coming soon.&ndash;&gt;-->
+<!--              <el-upload-->
+<!--                  class="upload-demo"-->
+<!--                  drag-->
+<!--                  action="http://localhost:8000/upload/"-->
+<!--                  :before-remove="beforeRemove"-->
+<!--                  multiple-->
+<!--                  :limit="1"-->
+<!--                  :on-exceed="handleExceed"-->
+<!--                  :on-change="handleChange"-->
+<!--                  accept=".png, .jpg, .jepg">-->
+<!--&lt;!&ndash;                <el-button  type="success" @click="upload">点击上传</el-button>&ndash;&gt;-->
+<!--                <i class="el-icon-upload"></i>-->
+<!--                <div class="el-upload__text">Drop file here or <em>click to upload</em></div>-->
+<!--                <div class="el-upload__tip" slot="tip">jpg/png files with a size less than 500kb</div>-->
+<!--              </el-upload>-->
+
+              <el-form>
+
+                <el-form-item label="姓名" prop="name">
+                  <el-input v-model="name"></el-input>
+                </el-form-item>
+                <el-form-item>
+                  <el-upload ref="upfile"
+                             style="display: inline"
+                             :auto-upload="false"
+                             :on-change="handleChange"
+                             :file-list="fileList"
+                             action="#">
+                    <el-button  type="success">选择文件</el-button>
+                  </el-upload>
+                </el-form-item>
+                <el-form-item>
+                  <el-button  type="success" @click="upload">点击上传</el-button>
+                </el-form-item>
+              </el-form>
+
             </el-tab-pane>
           </el-tabs>
           </div>
@@ -157,11 +234,6 @@
   </div>
 </template>
 
-
-
-
-
-
 <script>
 import { WOW } from 'wowjs'
 import TopBar from "@/components/TopBar";
@@ -173,42 +245,25 @@ export default {
   },
   data(){
     return{
-      no_bay:'iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjUuMywgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy',
+      name:'',
+      fileList:[],
+      no_bay:'',
       activeName2: 'first',
       activeName: 'first',
       showbar:false,
       showmain:true,
-      options1: [{
-        value: 'dog',
-        label: 'dog'
-      }, {
-        value: 'cat',
-        label: 'cat'
-      }, {
-        value: 'horse',
-        label: 'horse'
-      },],
-      options2: [{
-        value2: 'yellow',
-        label2: 'yellow'
-      },
-        {
-          value2: 'black',
-          label2: 'black'
-        },],
-      options3: [{
-        value3: 'small',
-        label3: 'small'
-      },{
-        value3: 'normal',
-        label3: 'normal'
-     },{
-        value3: 'big',
-        label3: 'big'
-      }],
-      value: '',
-      value2: '',
-      value3: ''
+      options5: [{value5: 'non_Bay', label5: 'non_Bay'}, {value5: 'Bay_non_info_prior', label5: 'Bay_non_info_prior'}, {value5: 'Bay_info_prior', label5: 'Bay_info_prior'}, {value5: 'BayesianRidge_inf_prior_fit_alpha', label5: 'BayesianRidge_inf_prior_fit_alpha'},],
+      options2: [{value2: 'True', label2: 'True'}, {value2: 'False', label2: 'False'},],
+      options4: [{value4: 'True', label4: 'True'}, {value4: 'False', label4: 'False'},],
+      options3: [{value3: 'small', label3: 'small'},{value3: 'normal', label3: 'normal'},{value3: 'big', label3: 'big'}],
+      options1: [{value: 'dog', label: 'dog'}, {value: 'cat', label: 'cat'}, {value: 'horse', label: 'horse'},],
+      value: '', value2: '', value3: '', value4:'', value5:'',
+      load_nobay:false, bnip:'',
+      load_bnip:false, bip:'', load_bip:false,
+      bipfa:'', load_bipfa:false,
+      dialogImageUrl: '',
+      dialogVisible: false,
+      disabled: false
     }
 
     },
@@ -227,18 +282,83 @@ export default {
       })
     },
     get_no_bay(){
-      this.axios({
-        url: 'http://localhost:8000/no_bay/',
-        method:'post',
-        data:{
-          'picture':this.value,'color':this.value2,'batch_size':this.value3
-        },
-        responseType: 'json'
-      }).then(res => {
-        // console.log(res.data)
-        this.no_bay = res.data
+      if(this.value==''||this.value2==''||this.value3==''||this.value4==''||this.value5==''){
+        this.$message({message: 'Please ensure chose all the options.', center: true});
+      }
+      else {
+        switch (this.value5){
+          case 'non_Bay': this.load_nobay = true; break;
+          case 'Bay_non_info_prior': this.load_bnip = true; break;
+          case 'Bay_info_prior': this.load_bip = true;break;
+          case  'BayesianRidge_inf_prior_fit_alpha':this.load_bipfa=true
+        }
+        this.$message({message: 'This may take a long time, please do not refresh and wait patiently.', center: true});
+        this.axios({
+          url: 'http://localhost:8000/bay/',
+          method:'post',
+          data:{
+            'picture':this.value,'po':this.value2,'num':this.value3,'hr':this.value4,'pattern':this.value5
+          },
+          responseType: 'json'
+        }).then(res => {
+          console.log(res.data)
+          var pattern = res.data['pattern']
+          switch (pattern){
+            case 'non_Bay':
+              this.load_nobay = false
+              this.no_bay = res.data['fig']
+              break
+            case 'Bay_non_info_prior':
+              this.load_bnip = false
+              this.bnip = res.data['fig']
+              break
+            case 'Bay_info_prior':
+              this.load_bip = false
+              this.bip = res.data['fig']
+              break
+            case 'BayesianRidge_inf_prior_fit_alpha':
+              this.load_bipfa = false
+              this.bipfa = res.data['fig']
+          }
+        })
+      }
+
+    },
+    handleChange(file, fileList) {
+      this.fileList = fileList;
+      console.log(fileList)
+    },
+    // handleRemove(file, fileList) {
+    //   console.log(file, fileList);
+    // },
+    // handlePreview(file) {
+    //   console.log(file);
+    // },
+    handleExceed(files, fileList) {
+      this.$message.warning(`The limit is 1, you selected ${files.length} files this time`);
+    },
+    beforeRemove(file, fileList) {
+      return this.$confirm(`Remove ${ file.name }？`);
+    },
+    upload(){
+      let fd = new FormData();
+      fd.append("name",this.name);
+      this.fileList.forEach(item=>{
+        //文件信息中raw才是真的文件
+        fd.append("file",item.raw);
+        //console.log(item.raw)
       })
-    }
+      console.log(fd)
+      this.axios({
+        url: 'http://localhost:8000/upload/',
+        method:'post',
+        data: {file: this.fileList[0].raw}
+      }).then(res=>{
+        console.log(res.data)
+      })
+    },
+
+
   },
   mounted() {
     document.title='BayLIME'
@@ -247,7 +367,7 @@ export default {
       animateClass: 'animated',    //animation.css动画的Class
       offset: 0,    //距离可视区域多少开始执行动画
       mobile: false,   //是否在移动设备执行动画
-      live: true    //异步加载的内容是否有效
+      live: false   //异步加载的内容是否有效
     })
     wow.init();
   },
@@ -296,5 +416,15 @@ html,body{
   box-sizing: border-box;
   width: calc(50% - 2.5px);
   height: calc(50% - 2.5px);
+  text-align: center;
+  background-color: #d4f0fd;
+  display: inline-block;
+  font-size:20px;
+  color: #303030;
+  line-height: 1.6;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden;
 }
+
 </style>
