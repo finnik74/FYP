@@ -7,20 +7,12 @@
 <script>
 export default {
   name: 'app',
-  components: {
-  },
+  components: {},
   data() {
     return {
-      routerAlive:true
+      routerAlive: true
     };
   },
-  methods: {
-  },
-  computed:{
-
-  },
-  mounted() {
-  }
 }
 </script>
 

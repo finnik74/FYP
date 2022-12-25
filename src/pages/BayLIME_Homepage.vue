@@ -176,41 +176,41 @@
            </el-tab-pane>
             <el-tab-pane label="BayLIME-Profession" name="second">
 <!--&lt;!&ndash;             Coming soon.&ndash;&gt;-->
-<!--              <el-upload-->
-<!--                  class="upload-demo"-->
-<!--                  drag-->
-<!--                  action="http://localhost:8000/upload/"-->
-<!--                  :before-remove="beforeRemove"-->
-<!--                  multiple-->
-<!--                  :limit="1"-->
-<!--                  :on-exceed="handleExceed"-->
-<!--                  :on-change="handleChange"-->
-<!--                  accept=".png, .jpg, .jepg">-->
-<!--&lt;!&ndash;                <el-button  type="success" @click="upload">点击上传</el-button>&ndash;&gt;-->
-<!--                <i class="el-icon-upload"></i>-->
-<!--                <div class="el-upload__text">Drop file here or <em>click to upload</em></div>-->
-<!--                <div class="el-upload__tip" slot="tip">jpg/png files with a size less than 500kb</div>-->
-<!--              </el-upload>-->
+              <el-upload
+                  class="upload-demo"
+                  drag
+                  action="http://localhost:8000/upload/"
+                  :before-remove="beforeRemove"
+                  multiple
+                  :limit="1"
+                  :on-exceed="handleExceed"
+                  :on-change="handleChange"
+                  accept=".png, .jpg, .jepg">
+<!--                <el-button  type="success" @click="upload">点击上传</el-button>-->
+                <i class="el-icon-upload"></i>
+                <div class="el-upload__text">Drop file here or <em>click to upload</em></div>
+                <div class="el-upload__tip" slot="tip">jpg/png files with a size less than 500kb</div>
+              </el-upload>
 
-              <el-form>
+<!--              <el-form>-->
 
-                <el-form-item label="姓名" prop="name">
-                  <el-input v-model="name"></el-input>
-                </el-form-item>
-                <el-form-item>
-                  <el-upload ref="upfile"
-                             style="display: inline"
-                             :auto-upload="false"
-                             :on-change="handleChange"
-                             :file-list="fileList"
-                             action="#">
-                    <el-button  type="success">选择文件</el-button>
-                  </el-upload>
-                </el-form-item>
-                <el-form-item>
-                  <el-button  type="success" @click="upload">点击上传</el-button>
-                </el-form-item>
-              </el-form>
+<!--                <el-form-item label="姓名" prop="name">-->
+<!--                  <el-input v-model="name"></el-input>-->
+<!--                </el-form-item>-->
+<!--                <el-form-item>-->
+<!--                  <el-upload ref="upfile"-->
+<!--                             style="display: inline"-->
+<!--                             :auto-upload="false"-->
+<!--                             :on-change="handleChange"-->
+<!--                             :file-list="fileList"-->
+<!--                             action="#">-->
+<!--                    <el-button  type="success">选择文件</el-button>-->
+<!--                  </el-upload>-->
+<!--                </el-form-item>-->
+<!--                <el-form-item>-->
+<!--                  <el-button  type="success" @click="upload">点击上传</el-button>-->
+<!--                </el-form-item>-->
+<!--              </el-form>-->
 
             </el-tab-pane>
           </el-tabs>
