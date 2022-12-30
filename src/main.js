@@ -1,18 +1,17 @@
 import Vue from 'vue'
 import App from './App.vue'
-import './plugins/element.js'
-// import locale from "element-ui/lib/locale/lang/en";
 import './finnik.css'
 Vue.config.productionTip = false
 import VueRouter from "vue-router";
 import router from './router'
-Vue.use(VueRouter)
-import BootstrapVue from 'bootstrap-vue'
-Vue.use(BootstrapVue)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import animated from 'animate.css'
+import Element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
+Vue.use(Element)
+Vue.use(VueRouter)
 Vue.use(animated)
 
 new Vue({
