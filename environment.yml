@@ -2,22 +2,22 @@ name: LIME
 channels:
  - conda-forge
 dependencies:
-  - python=3.7
-  - keras==2.4.0
-  - keras-applications==1.0.8
-  - keras-nightly==2.5.0.dev2021032900
-  - keras-preprocessing==1.1.2
-  - lime==0.2.0.1
-  - matplotlib==3.5.3
-  - numpy==1.19.5
-  - scikit-image==0.19.3
-  - scikit-learn==1.0.2
-  - scipy==1.7.3
-  - tensorboard==2.11.2
-  - tensorboard-data-server==0.6.1
-  - tensorboard-plugin-wit==1.8.1
-  - tensorflow==2.5.3
-  - tensorflow-estimator==2.5.0
-  - termcolor==1.1.0 
-  - tqdm==4.64.1
+ - python=3.7
+ - keras=2.4.0
+ - keras-applications==1.0.8
+ - keras-nightly==2.5.0.dev2021032900
+ - keras-preprocessing==1.1.2
+ - lime==0.2.0.1
+ - matplotlib==3.5.3
+ - numpy==1.19.5
+ - scikit-image==0.19.3
+ - scikit-learn==1.0.2
+ - scipy==1.7.3
+ - tensorboard==2.11.2
+ - tensorboard-data-server==0.6.1
+ - tensorboard-plugin-wit==1.8.1
+ - tensorflow==2.5.3
+ - tensorflow-estimator==2.5.0
+ - termcolor==1.1.0 
+ - tqdm==4.64.1
  
