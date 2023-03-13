@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ef607a90-6a35-4af3-bb32-b4237b1aeefd" name="变更" comment="390-1">
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/ui.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demoproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finnik74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui.ipynb" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="HTML File" />
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HafcPNr8wWWxITnyTzg8umynHz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/finnik74/src/picture" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDK" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2748691" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/finnik74/src/picture" />
+      <recent name="$PROJECT_DIR$/demoproject/BayLime" />
+      <recent name="$PROJECT_DIR$/demoproject/templates/finnik74/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.ipynb_checkpoints" />
+      <recent name="$PROJECT_DIR$/finnik74/public/static" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/demoproject" />
+      <recent name="$PROJECT_DIR$/demoproject/templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.baylime_implement">
+    <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="nim.task.build.to.cache" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="FYP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="baylime_implement" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/envs/BayLIME/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BayLIME_BACK/BayLime" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BayLIME_BACK/BayLime/baylime_implement.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lime_demo" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="FYP-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/envs/BayLIME/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BayLIME_BACK/BayLime" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BayLIME_BACK/BayLime/lime_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lime_professor" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="FYP-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/envs/BayLIME/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BayLIME_BACK/BayLime" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BayLIME_BACK/BayLime/lime_professor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.baylime_implement" />
+      <item itemvalue="Python.lime_demo" />
+      <item itemvalue="Python.lime_professor" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="ef607a90-6a35-4af3-bb32-b4237b1aeefd" name="变更" comment="" />
+      <created>1668528195981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668528195981</updated>
+      <workItem from="1668528197227" duration="31702000" />
+      <workItem from="1668729992305" duration="15575000" />
+      <workItem from="1668803952633" duration="926000" />
+      <workItem from="1668804897153" duration="3882000" />
+      <workItem from="1668905690321" duration="3199000" />
+      <workItem from="1668909419275" duration="6970000" />
+      <workItem from="1669047324465" duration="5000000" />
+      <workItem from="1669057071002" duration="871000" />
+      <workItem from="1669160216164" duration="3248000" />
+      <workItem from="1669169687917" duration="34000" />
+      <workItem from="1669508180349" duration="15081000" />
+      <workItem from="1669587507768" duration="6072000" />
+      <workItem from="1669602815502" duration="10904000" />
+      <workItem from="1669937749074" duration="3342000" />
+      <workItem from="1670013714108" duration="327000" />
+      <workItem from="1670092637085" duration="2423000" />
+      <workItem from="1670373857651" duration="84000" />
+      <workItem from="1670459098310" duration="10229000" />
+      <workItem from="1670616094503" duration="4219000" />
+      <workItem from="1670622785020" duration="4685000" />
+      <workItem from="1671069378299" duration="8407000" />
+      <workItem from="1671183594323" duration="56000" />
+      <workItem from="1671549409130" duration="4650000" />
+      <workItem from="1671561855332" duration="4699000" />
+      <workItem from="1671748739095" duration="8504000" />
+      <workItem from="1671810693934" duration="8554000" />
+      <workItem from="1671835895987" duration="106000" />
+      <workItem from="1671841218963" duration="3293000" />
+      <workItem from="1671995472621" duration="292000" />
+      <workItem from="1671995769529" duration="24000" />
+      <workItem from="1671995808237" duration="2716000" />
+      <workItem from="1672005488989" duration="2685000" />
+      <workItem from="1672259395939" duration="2862000" />
+      <workItem from="1672274805671" duration="7014000" />
+      <workItem from="1672345632064" duration="1178000" />
+      <workItem from="1672364607716" duration="11325000" />
+      <workItem from="1672424310463" duration="46000" />
+      <workItem from="1672424376040" duration="61000" />
+      <workItem from="1672424441669" duration="1217000" />
+      <workItem from="1672425721154" duration="207000" />
+      <workItem from="1672970435207" duration="1002000" />
+      <workItem from="1672971728847" duration="176000" />
+      <workItem from="1672971909120" duration="593000" />
+      <workItem from="1672975608560" duration="400000" />
+      <workItem from="1674174038986" duration="2364000" />
+      <workItem from="1674176599035" duration="18102000" />
+      <workItem from="1674337077178" duration="1611000" />
+      <workItem from="1674470772012" duration="118000" />
+      <workItem from="1674511857470" duration="1345000" />
+      <workItem from="1675203046352" duration="598000" />
+      <workItem from="1675269236321" duration="116000" />
+      <workItem from="1675634737741" duration="67000" />
+      <workItem from="1675634913699" duration="664000" />
+      <workItem from="1677608368760" duration="8374000" />
+      <workItem from="1678055643881" duration="27942000" />
+      <workItem from="1678491260475" duration="10837000" />
+      <workItem from="1678673263440" duration="8287000" />
+      <workItem from="1678740467338" duration="51000" />
+    </task>
+    <task id="LOCAL-00001" summary="390">
+      <created>1669078214239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669078214239</updated>
+    </task>
+    <task id="LOCAL-00002" summary="390">
+      <created>1671560291998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671560291998</updated>
+    </task>
+    <task id="LOCAL-00003" summary="390">
+      <created>1671561178431</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671561178431</updated>
+    </task>
+    <task id="LOCAL-00004" summary="390">
+      <created>1671995503979</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671995503980</updated>
+    </task>
+    <task id="LOCAL-00005" summary="390-1">
+      <created>1672372001199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672372001199</updated>
+    </task>
+    <task id="LOCAL-00006" summary="390-1">
+      <created>1672971786544</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672971786544</updated>
+    </task>
+    <task id="LOCAL-00007" summary="390-1">
+      <created>1675634791392</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675634791392</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/BayLime" />
+      <path value="$PROJECT_DIR$/BayLIME_BACK" />
+      <path value="$PROJECT_DIR$/BayLIME_BACK/BayLime" />
+      <path value="$PROJECT_DIR$/BayLIME_FRONT" />
+      <path value="$PROJECT_DIR$/demoproject" />
+      <path value="$PROJECT_DIR$/demoproject/BayLime" />
+      <path value="$PROJECT_DIR$/finnik74" />
+    </ignored-roots>
+    <MESSAGE value="390" />
+    <MESSAGE value="390-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="390-1" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FYP$baylime_implement.coverage" NAME="baylime_implement 覆盖结果" MODIFIED="1669570485368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demoproject/BayLime" />
+    <SUITE FILE_PATH="coverage/FYP_main$baylime_implement.coverage" NAME="baylime_implement 覆盖结果" MODIFIED="1678719238024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BayLIME_BACK/BayLime" />
+  </component>
+</project>
