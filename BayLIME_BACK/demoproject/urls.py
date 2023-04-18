@@ -26,10 +26,12 @@ urlpatterns = [
     path('register/',view.user_register),
     path('bay/',view.bay),
     path('lime_demo/',view.limeDemo),
-    # path('upload/',view.upload),
+    path('upload/',view.upload),
     path('baylime_load/',view.load_sp),
     path('verify/',view.verify_sp),
-    path('baylime_predict/',view.baylime_predict)
+    path('baylime_predict/',view.baylime_predict),
+    path('download_csv/', view.download_csv, name='download_csv'),
+    path('delete-folder/', view.delete_folder),
 
 ]
 
